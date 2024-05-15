@@ -7,7 +7,7 @@ language("C++")
 targetdir("bin/%{cfg.buildcfg}")
 
 files({ "**.hpp", "**.h", "**.cpp", "**.c" })
-removefiles({ "opengl.cpp", "include/glad/glad.c", "include/glad/glad.h" })
+removefiles({ "opengl.cpp" })
 
 links({ "GL", "glfw", "X11", "freetype", "assimp", "Xrandr", "Xi", "dl" })
 

@@ -52,14 +52,14 @@
     <Filter Include="include\KHR">
       <UniqueIdentifier>{7D5AC031-E90F-3927-7204-33FEDEB82F2B}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\glad">
+      <UniqueIdentifier>{30A0DB69-1C03-6B0E-C588-A3C4B1CA3691}</UniqueIdentifier>
+    </Filter>
     <Filter Include="include\imgui">
       <UniqueIdentifier>{B37F74A5-1F40-F0DB-E87A-395954FA34B8}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\imgui-file-dialog">
       <UniqueIdentifier>{7D1A0852-E9DC-3BDC-328D-CA689E8E14BA}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="include\src">
-      <UniqueIdentifier>{200AC131-8CBF-3927-15B4-33FE8168302B}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\texture">
       <UniqueIdentifier>{09E6DD11-7571-4BD6-7E82-CECAEA8CA7D6}</UniqueIdentifier>
@@ -175,6 +175,9 @@
     <ClInclude Include="include\KHR\khrplatform.h">
       <Filter>include\KHR</Filter>
     </ClInclude>
+    <ClInclude Include="include\glad\glad.h">
+      <Filter>include\glad</Filter>
+    </ClInclude>
     <ClInclude Include="include\imgui-file-dialog\ImGuiFileDialog.h">
       <Filter>include\imgui-file-dialog</Filter>
     </ClInclude>
@@ -207,9 +210,6 @@
     </ClInclude>
     <ClInclude Include="include\imgui\imstb_truetype.h">
       <Filter>include\imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="include\src\glad.h">
-      <Filter>include\src</Filter>
     </ClInclude>
     <ClInclude Include="include\texture\stb_image.hpp">
       <Filter>include\texture</Filter>
@@ -258,6 +258,9 @@
     <ClCompile Include="Window\Window.cpp">
       <Filter>Window</Filter>
     </ClCompile>
+    <ClCompile Include="include\glad\glad.c">
+      <Filter>include\glad</Filter>
+    </ClCompile>
     <ClCompile Include="include\imgui-file-dialog\ImGuiFileDialog.cpp">
       <Filter>include\imgui-file-dialog</Filter>
     </ClCompile>
@@ -281,9 +284,6 @@
     </ClCompile>
     <ClCompile Include="include\imgui\imgui_widgets.cpp">
       <Filter>include\imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="include\src\glad.c">
-      <Filter>include\src</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
   </ItemGroup>

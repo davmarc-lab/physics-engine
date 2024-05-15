@@ -125,6 +125,7 @@
     <ClInclude Include="include\GLFW\glfw3.h" />
     <ClInclude Include="include\GLFW\glfw3native.h" />
     <ClInclude Include="include\KHR\khrplatform.h" />
+    <ClInclude Include="include\glad\glad.h" />
     <ClInclude Include="include\imgui-file-dialog\ImGuiFileDialog.h" />
     <ClInclude Include="include\imgui-file-dialog\ImGuiFileDialogConfig.h" />
     <ClInclude Include="include\imgui\imconfig.h" />
@@ -136,7 +137,6 @@
     <ClInclude Include="include\imgui\imstb_rectpack.h" />
     <ClInclude Include="include\imgui\imstb_textedit.h" />
     <ClInclude Include="include\imgui\imstb_truetype.h" />
-    <ClInclude Include="include\src\glad.h" />
     <ClInclude Include="include\texture\stb_image.hpp" />
   </ItemGroup>
   <ItemGroup>
@@ -154,6 +154,7 @@
     <ClCompile Include="Shader\Shader.cpp" />
     <ClCompile Include="Text\Text.cpp" />
     <ClCompile Include="Window\Window.cpp" />
+    <ClCompile Include="include\glad\glad.c" />
     <ClCompile Include="include\imgui-file-dialog\ImGuiFileDialog.cpp" />
     <ClCompile Include="include\imgui\imgui.cpp" />
     <ClCompile Include="include\imgui\imgui_demo.cpp" />
@@ -162,7 +163,6 @@
     <ClCompile Include="include\imgui\imgui_impl_opengl3.cpp" />
     <ClCompile Include="include\imgui\imgui_tables.cpp" />
     <ClCompile Include="include\imgui\imgui_widgets.cpp" />
-    <ClCompile Include="include\src\glad.c" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
