@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Application">
+      <UniqueIdentifier>{D9DE78AF-4594-F1A4-CE88-EB7B3A3DE8A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{CE7141AB-BA13-6C81-A3CE-7FD58F0FF3D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Color">
+      <UniqueIdentifier>{2422FA0C-9036-22BE-59B8-C51DC58B1EEF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity">
+      <UniqueIdentifier>{A2E9DAB0-8E8B-0587-7746-19DB63878CD7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Collider">
+      <UniqueIdentifier>{9F723F0F-0BFE-ACD3-140F-30C8801909D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Textures">
+      <UniqueIdentifier>{B5B16DDA-213D-DB9E-2A4E-5E939658379F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity\Transform">
+      <UniqueIdentifier>{EDB3D62E-D9AC-F580-02DF-DA05EE36D58C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{7FA9857C-6BE0-860D-14CD-6C1000E3020F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{FA04897C-E63B-8A0D-8F28-70107B3E060F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{FC0C0CD1-E8AE-36A7-D169-4AFBBDAABDF7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Text">
+      <UniqueIdentifier>{EADC8C7C-D613-8E0D-7F00-74106B160A0F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Window">
+      <UniqueIdentifier>{3DEA79DA-298C-A4B0-1247-B804FE872B01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World">
+      <UniqueIdentifier>{4D25640E-B939-8CBF-82BB-2F1FEE8E88F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="World\Solver">
+      <UniqueIdentifier>{97BC18F5-831F-A899-2CA5-E04F18E7731C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GLFW">
+      <UniqueIdentifier>{6888C969-54EB-580E-FD70-91C4E9B22491}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\KHR">
+      <UniqueIdentifier>{7D5AC031-E90F-3927-7204-33FEDEB82F2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\imgui">
+      <UniqueIdentifier>{B37F74A5-1F40-F0DB-E87A-395954FA34B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\imgui-file-dialog">
+      <UniqueIdentifier>{7D1A0852-E9DC-3BDC-328D-CA689E8E14BA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\src">
+      <UniqueIdentifier>{200AC131-8CBF-3927-15B4-33FE8168302B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\texture">
+      <UniqueIdentifier>{09E6DD11-7571-4BD6-7E82-CECAEA8CA7D6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application\Application.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera\Camera.hpp">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Color\Color.hpp">
+      <Filter>Color</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Collider\Collider.hpp">
+      <Filter>Entity\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Collider\Collision.hpp">
+      <Filter>Entity\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Collider\CubeCollider.hpp">
+      <Filter>Entity\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Collider\SphereCollider.hpp">
+      <Filter>Entity\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Cube.hpp">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Cubemap.hpp">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Entity.hpp">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Plane.hpp">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Sphere.hpp">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Textures\Texture.hpp">
+      <Filter>Entity\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Transform\Transform.hpp">
+      <Filter>Entity\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Game.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\GameState.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\IntroState.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\OptionState.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\PlayState.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib.hpp" />
+    <ClInclude Include="Menu\ButtonComponent.hpp">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Component.hpp">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\IGEntity.hpp">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\IGMenu.hpp">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\OptionPane.hpp">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\RectComponent.hpp">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader\Shader.hpp">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Text\Text.hpp">
+      <Filter>Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\Crosshair.hpp">
+      <Filter>Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\Window.hpp">
+      <Filter>Window</Filter>
+    </ClInclude>
+    <ClInclude Include="World\PhysicWorld.hpp">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Solver\Solver.hpp">
+      <Filter>World\Solver</Filter>
+    </ClInclude>
+    <ClInclude Include="World\Solver\StaticSolver.hpp">
+      <Filter>World\Solver</Filter>
+    </ClInclude>
+    <ClInclude Include="World\World.hpp">
+      <Filter>World</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GLFW\glfw3.h">
+      <Filter>include\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GLFW\glfw3native.h">
+      <Filter>include\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="include\KHR\khrplatform.h">
+      <Filter>include\KHR</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui-file-dialog\ImGuiFileDialog.h">
+      <Filter>include\imgui-file-dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui-file-dialog\ImGuiFileDialogConfig.h">
+      <Filter>include\imgui-file-dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imconfig.h">
+      <Filter>include\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imgui.h">
+      <Filter>include\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imgui_impl_glfw.h">
+      <Filter>include\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imgui_impl_opengl3.h">
+      <Filter>include\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imgui_impl_opengl3_loader.h">
+      <Filter>include\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imgui_internal.h">
+      <Filter>include\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imstb_rectpack.h">
+      <Filter>include\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imstb_textedit.h">
+      <Filter>include\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imgui\imstb_truetype.h">
+      <Filter>include\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\src\glad.h">
+      <Filter>include\src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\texture\stb_image.hpp">
+      <Filter>include\texture</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Application\Application.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera\Camera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Cube.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Cubemap.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Plane.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Sphere.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Textures\Texture.cpp">
+      <Filter>Entity\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\IntroState.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\OptionState.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\PlayState.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader\Shader.cpp">
+      <Filter>Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Text\Text.cpp">
+      <Filter>Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\Window.cpp">
+      <Filter>Window</Filter>
+    </ClCompile>
+    <ClCompile Include="include\imgui-file-dialog\ImGuiFileDialog.cpp">
+      <Filter>include\imgui-file-dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="include\imgui\imgui.cpp">
+      <Filter>include\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="include\imgui\imgui_demo.cpp">
+      <Filter>include\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="include\imgui\imgui_draw.cpp">
+      <Filter>include\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="include\imgui\imgui_impl_glfw.cpp">
+      <Filter>include\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="include\imgui\imgui_impl_opengl3.cpp">
+      <Filter>include\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="include\imgui\imgui_tables.cpp">
+      <Filter>include\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="include\imgui\imgui_widgets.cpp">
+      <Filter>include\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="include\src\glad.c">
+      <Filter>include\src</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+</Project>
