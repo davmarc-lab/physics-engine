@@ -36,7 +36,7 @@ inline void printMat4(mat4 mat) {
     cout << to_string(mat) << endl;
 }
 
-const float WIDTH = 1200.f, HEIGHT = 800.f;
+const float WIDTH = 1600.f, HEIGHT = 900.f;
 
 const mat4 textProjection = ortho(0.f, WIDTH, 0.f, HEIGHT);
 

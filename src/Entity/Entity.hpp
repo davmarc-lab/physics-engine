@@ -116,6 +116,10 @@ public:
         this->collider->createCollider(this->coords.vertex);
     }
 
+    inline bool isCollStatic() { return this->collider->isStaticColl(); }
+
+    inline void setCollStatic() { this->collider->setStaticColl(); }
+
     inline bool isStatic() { return this->m_static; }
 
     inline void setStatic() { this->m_static = true; }

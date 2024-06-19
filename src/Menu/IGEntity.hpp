@@ -98,10 +98,10 @@ public:
             this->observer->setScale(vec3(scale));
 
             ImGui::Text("Rotation:");
-            ImGui::SliderFloat("r.x", &rot.x, -3.14, 3.14);
-            ImGui::SliderFloat("r.y", &rot.y, -3.14, 3.14);
-            ImGui::SliderFloat("r.z", &rot.z, -3.14, 3.14);
-            if (ImGui::Button("Reset Rotation")) {
+            ImGui::SliderFloat("x##3", &rot.x, -3.14, 3.14);
+            ImGui::SliderFloat("y##3", &rot.y, -3.14, 3.14);
+            ImGui::SliderFloat("z##3", &rot.z, -3.14, 3.14);
+            if (ImGui::Button("Reset##3")) {
                 rot = vec3(0);
             }
             this->observer->setRotation(vec3(rot));
@@ -131,22 +131,22 @@ public:
         auto force = this->observer->getForce();
         auto mass = this->observer->getMass();
     
-        if (!ImGui::CollapsingHeader("Physics")) {
+        if (ImGui::CollapsingHeader("Physics")) {
             ImGui::Text("Mass:");
             if (ImGui::SliderFloat("mass", &mass, 0, 200)) {
                 this->observer->setMass(mass);
             }
 
             ImGui::Text("Velocity:");
-            ImGui::SliderFloat("vel.x", &vel.x, -10, 10);
-            ImGui::SliderFloat("vel.y", &vel.y, -10, 10);
-            ImGui::SliderFloat("vel.z", &vel.z, -10, 10);
+            ImGui::SliderFloat("x##4", &vel.x, -10, 10);
+            ImGui::SliderFloat("y##4", &vel.y, -10, 10);
+            ImGui::SliderFloat("z##4", &vel.z, -10, 10);
             this->observer->setVelocity(vel);
 
             ImGui::Text("Force:");
-            ImGui::SliderFloat("for.x", &force.x, -10, 10);
-            ImGui::SliderFloat("for.y", &force.y, -10, 10);
-            ImGui::SliderFloat("for.z", &force.z, -10, 10);
+            ImGui::SliderFloat("x##5", &force.x, -10, 10);
+            ImGui::SliderFloat("y##5", &force.y, -10, 10);
+            ImGui::SliderFloat("z##5", &force.z, -10, 10);
         }
 
 

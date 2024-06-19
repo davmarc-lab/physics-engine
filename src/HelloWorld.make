@@ -79,6 +79,7 @@ OBJECTS := \
 	$(OBJDIR)/Shader.o \
 	$(OBJDIR)/Text.o \
 	$(OBJDIR)/Window.o \
+	$(OBJDIR)/glad.o \
 	$(OBJDIR)/imgui.o \
 	$(OBJDIR)/imgui_demo.o \
 	$(OBJDIR)/imgui_draw.o \
@@ -87,7 +88,6 @@ OBJECTS := \
 	$(OBJDIR)/imgui_tables.o \
 	$(OBJDIR)/imgui_widgets.o \
 	$(OBJDIR)/ImGuiFileDialog.o \
-	$(OBJDIR)/glad.o \
 	$(OBJDIR)/main.o \
 
 RESOURCES := \
@@ -189,6 +189,9 @@ $(OBJDIR)/Text.o: Text/Text.cpp
 $(OBJDIR)/Window.o: Window/Window.cpp
 	@echo $(notdir $<)
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/glad.o: include/glad/glad.c
+	@echo $(notdir $<)
+	$(SILENT) $(CC) $(ALL_CFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/imgui.o: include/imgui/imgui.cpp
 	@echo $(notdir $<)
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
@@ -213,9 +216,6 @@ $(OBJDIR)/imgui_widgets.o: include/imgui/imgui_widgets.cpp
 $(OBJDIR)/ImGuiFileDialog.o: include/imgui-file-dialog/ImGuiFileDialog.cpp
 	@echo $(notdir $<)
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
-$(OBJDIR)/glad.o: include/src/glad.c
-	@echo $(notdir $<)
-	$(SILENT) $(CC) $(ALL_CFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/main.o: main.cpp
 	@echo $(notdir $<)
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"

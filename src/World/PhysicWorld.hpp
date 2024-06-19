@@ -50,7 +50,7 @@ public:
 
             // F = m * a
             if (!elem->isStatic()) {
-                elem->setVelocity(elem->getForce() / elem->getMass() * elem->getMotionTime());
+                elem->setVelocity(PhysicWorld::gravity * elem->getMotionTime());
             }
         }
 
@@ -64,10 +64,10 @@ public:
 
     inline void resolveCollision(const float dt) {
 
-        for (const auto a : this->objects) {
-            for (const auto b : this->objects) {
-                a->setCollider(a->getCollider());
-                b->setCollider(b->getCollider());
+        for (int i = 0; i < this->objects.size(); i++) {
+            for (int j = i+1; j < this->objects.size(); j++) {
+                Entity *a = this->objects.at(i);
+                Entity *b = this->objects.at(j);
 
                 if (a == b)
                     break;
@@ -90,6 +90,7 @@ public:
         for (const auto sol : this->solvers) {
             sol->solve(this->collisions, this->tc - this->t0);
         }
+
         this->collisions.clear();
     }
 
@@ -97,3 +98,4 @@ public:
 
     ~PhysicWorld() = default;
 };
+
